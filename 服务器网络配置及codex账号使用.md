@@ -62,4 +62,7 @@
  然后关闭并重新连接 Remote：
 `Cmd/Ctrl + Shift + P → Close Remote Connection`
 
+### 参考文献
+https://linux.do/t/topic/1213201
+
 

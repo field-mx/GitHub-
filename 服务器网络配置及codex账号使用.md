@@ -55,6 +55,9 @@
 
  # 3.服务器配置远程空间代理
  vscode中，中按下`Cmd/Ctrl + Shift + P`，输入`Open Remote Settings`，进入远程服务器的设置面板，搜索「proxy」，将： `http-proxy` 设置为 `http://127.0.0.1:10809`，如下图
+<p align="center">
+  <img src="./assets/proxy.png" alt="">
+</p>
 
  然后关闭并重新连接 Remote：
 `Cmd/Ctrl + Shift + P → Close Remote Connection`

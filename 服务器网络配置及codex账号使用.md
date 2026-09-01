@@ -1,4 +1,4 @@
-# codex账号使用
+# 一、codex账号使用
 
 
 ## 原理
@@ -13,7 +13,7 @@
 
   ---
 
-  # 服务器网络配置（SSH反向端口转发remoteforward）
+# 二、服务器网络配置（SSH反向端口转发remoteforward）
 
   ## 原理
   网络连接关系：
@@ -32,7 +32,7 @@
 
   ## 操作步骤
 
-  # 1.本地配置：文件位于本机电脑的C:\Users\[用户名]\.ssh\config
+### 1.本地配置：文件位于本机电脑的C:\Users\[用户名]\.ssh\config
   ```
   Host thu-lab-maxon //服务器别名
     HostName [aaa.bbb.cc.dd]  //服务器地址
@@ -40,7 +40,7 @@
     RemoteForward [10809] [127.0.0.1:10809] //服务器监听端口10809，反向隧道连接到电脑主机的10809端口，该端口为代理https端口
     ExitOnForwardFailure yes //创建不成功，就别继续连接
   ```
-  # 2.服务器代理配置
+### 2.服务器代理配置
   在服务器~/.bashrc添加以下内容：
   ```
   // 服务器中http和https协议访问都通过10809代理访问
@@ -53,7 +53,7 @@
   source ~/.bashrc
   ```
 
-   # 3.服务器配置远程空间代理
+### 3.服务器配置远程空间代理
    vscode中，中按下`Cmd/Ctrl + Shift + P`，输入`Open Remote Settings`，进入远程服务器的设置面板，搜索「proxy」，将： `http-proxy` 设置为       `http://127.0.0.1:10809`，如下图
   <p align="center">
   <img src="./assets/proxy.png" alt="">
